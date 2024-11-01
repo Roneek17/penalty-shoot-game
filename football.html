@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Penalty Shootout Game</title>
+    <link rel="stylesheet" href="football.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Penalty Shootout !! </h1>
+        
+        <div class="goal">
+            <img src="goalpost.jpg" alt="Goalpost" class="goalpost">
+            <img src="keeper.png" alt="Goalkeeper" class="goalkeeper" id="goalkeeper">
+            <img src="messi.png" alt="Player" class="player">
+            <img src="ball.png" alt="Ball" class="ball" id="ball">
+        </div>
+        
+        <div class="controls">
+            <button onclick="shoot('top-left')">Top Left</button>
+            <button onclick="shoot('top-center')">Top Center</button>
+            <button onclick="shoot('top-right')">Top Right</button>
+            <button onclick="shoot('bottom-left')">Bottom Left</button>
+            <button onclick="shoot('bottom-center')">Bottom Center</button>
+            <button onclick="shoot('bottom-right')">Bottom Right</button>
+        </div>
+        
+        <div class="result" id="result"> shoot!</div>
+    </div>
+    <script src="football.js"></script>
+</body>
+</html>
